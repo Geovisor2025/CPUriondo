@@ -516,7 +516,7 @@ var measureControl = (function (Control) {
         }
         if (measuring) {
             /** @type {string} */
-            var helpMsg = 'Click to start drawing';
+            var helpMsg = 'Click para empezar a dibujar';
             if (sketch) {
                 var geom = (sketch.getGeometry());
                 if (geom instanceof ol.geom.Polygon) {
@@ -534,7 +534,7 @@ var measureControl = (function (Control) {
     var measureControl = document.querySelector(".measure-control");
 
     var selectLabel = document.createElement("label");
-    selectLabel.innerHTML = "&nbsp;Measure:&nbsp;";
+    selectLabel.innerHTML = "&nbsp;Medir:&nbsp;";
 
     var typeSelect = document.createElement("select");
     typeSelect.id = "type";
@@ -591,7 +591,7 @@ var measureTooltip;
  * Message to show when the user is drawing a line.
  * @type {string}
  */
-var continueLineMsg = 'Click to continue drawing the line';
+var continueLineMsg = 'Click para continuar dibujando la línea';
 
 
 
@@ -599,7 +599,7 @@ var continueLineMsg = 'Click to continue drawing the line';
  * Message to show when the user is drawing a polygon.
  * @type {string}
  */
-var continuePolygonMsg = "1click continue, 2click close";
+var continuePolygonMsg = "1click continuar, 2click cerrar";
 
 
 var typeSelect = document.getElementById("type");
